@@ -1,5 +1,9 @@
 FROM ubuntu:latest
 
+RUN apt-get update
+RUN apt-get install -y git
+RUN apt-get install -y python3
+
 WORKDIR /root
 
 RUN mkdir A B C
